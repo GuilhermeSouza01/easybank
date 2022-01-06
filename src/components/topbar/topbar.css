@@ -1,0 +1,40 @@
+.topbar {
+  width: 100%;
+  height: 55px;
+  background-color: #fff;
+  position: fixed;
+}
+.wrapper {
+  display: flex;
+  padding: 10px 100px 10px;
+}
+
+.logo {
+  height: 20px;
+  margin: 0px 200px 10px 0px;
+}
+
+.left {
+  display: flex;
+}
+
+.itemContainer {
+  display: flex;
+  text-align: center;
+  margin: 0px 0px 0px 10px;
+  color: hsl(233, 8%, 62%);
+}
+
+.right {
+  margin-left: 200px;
+}
+
+.requestButton {
+  color: white;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  background-color: hsl(136, 65%, 51%);
+}

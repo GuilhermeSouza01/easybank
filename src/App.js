@@ -1,8 +1,11 @@
+import Topbar from "./components/topbar/Topbar";
+import Intro from "./components/intro/Intro"
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Topbar />
+      <Intro />
     </div>
   );
 }

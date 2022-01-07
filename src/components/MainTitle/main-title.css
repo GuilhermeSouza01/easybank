@@ -1,0 +1,10 @@
+*{
+    --principal-color: Dark-Blue hsl(233, 26%, 24%);
+
+}
+.title{
+     color: var(--principal-color);
+     font-size: 2rem;
+     font-weight: 400;
+     font-family: 'Public Sans', sans-serif;
+}

@@ -1,5 +1,40 @@
 .intro {
-  width: 100%;
-  height: 700px;
-  background-color: hsl(220, 16%, 96%);
+  background-color: hsl(0, 0%, 98%);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
+
+.detailsIntro {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  transform: translate(40%, -40%);
+}
+
+.requestButton {
+  display: grid;
+  border: none;
+  outline: none;
+  all: unset;
+  width: 115px;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  color: hsl(0, 0%, 98%);
+  margin: 20px 0;
+  padding: 10px 40px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.detailsIntro h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* .detailsIntro p {
+background: url(images/logo.jpg);
+} */

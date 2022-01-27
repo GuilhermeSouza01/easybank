@@ -38,3 +38,14 @@
 /* .detailsIntro p {
 background: url(images/logo.jpg);
 } */
+
+.imgIntro {
+  background: url('../../../public/images/bg-intro-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 70px;
+    background-position-y: -150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

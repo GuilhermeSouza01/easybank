@@ -1,3 +1,4 @@
+import MainTitle from '../MainTitle/MainTitle'
 import './intro.css'
 
 export default function Intro({ title }) {

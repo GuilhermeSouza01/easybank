@@ -1,12 +1,12 @@
 .intro {
   background-color: hsl(0, 0%, 98%);
   display: grid;
-  grid-template-columns: 40% 60%;
   height: 90vh;
+  grid-template-columns: 40% 60%;
   justify-content: center;
   align-items: center;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .detailsIntro {
@@ -16,7 +16,11 @@
   transform: translate(40%, -40%);
 }
 
-.requestButton {
+.detailsIntro h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.request-btn {
   display: grid;
   border: none;
   outline: none;
@@ -30,22 +34,98 @@
   cursor: pointer;
 }
 
-.detailsIntro h1 {
-  font-size: 40px;
-  margin-bottom: 15px;
-}
-
-/* .detailsIntro p {
-background: url(images/logo.jpg);
-} */
-
 .imgIntro {
   background: url('../../../public/images/bg-intro-desktop.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: 70px;
-    background-position-y: -150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 70px;
+  background-position-y: -150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgIntro img {
+  width: 75%;
+  transform: translate(110px, -50px);
+}
+
+@media only screen and (max-width: 375px) {
+  .intro {
+    /* grid-template-columns: repeat(auto-fill, minmax(40&, 60%));
+    grid-template-rows: 1fr 1fr; */
+    all: unset;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background-color: white;
+  }
+
+  .detailsIntro {
+    width: 100%;
+    transform: translate(0);
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .detailsIntro h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: -70px;
+  }
+
+  .imgIntro {
+    order: -1;
+    overflow: hidden;
+    background-position-x: 60px;
+    background-position-y: -100px;
+  }
+  .imgIntro img {
+    width: 92%;
+    transform: translate(0px, -120px);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .intro {
+    all: unset;
+    /* grid-template-columns: repeat(auto-fill, minmax(40&, 60%));
+    grid-template-rows: 1fr 1fr; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+
+  .detailsIntro {
+    display: flex;
+    width: 100%;
+    padding: 0 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translate(0);
+  }
+
+  .detailsIntro h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    margin-top: -70px;
+  }
+
+  .imgIntro {
+    order: -1;
+    overflow: hidden;
+    background-position-x: 60px;
+    background-position-y: -100px;
+  }
+  .imgIntro img {
+    width: 92%;
+    transform: translate(0px, -120px);
+  }
 }

@@ -12,7 +12,7 @@ export default function Intro({ title }) {
             one-stop-shop for spending, saving, budgeting, investing, and much
             more.
           </p>
-          <button className='requestButton'>Request invite</button>
+          <button className='request-btn'>Request invite</button>
         </div>
         <div className='imgIntro'>
           <img src='images/image-mockups.png' alt='' />
